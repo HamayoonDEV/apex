@@ -1,0 +1,86 @@
+.div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+    background-color: #D3D3D3;
+    width: 20rem;
+    margin-left: 35rem;
+    padding: 2rem;
+    border-radius: 15px;
+}
+.h1{
+    color: gray;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+.input > * {
+    margin-bottom: 1rem;
+}
+/* button.module.css */
+
+/* Main Container */
+.button {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 10px; /* Provides spacing between child elements */
+}
+
+/* Primary Login Button */
+.button > button:first-child {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button > button:first-child:hover {
+    background-color: #0056b3;
+}
+
+/* Text and Register Button inside Span */
+.button span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.button span > button {
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    background-color: #eee; /* A lighter color compared to the primary button */
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button span > button:hover {
+    background-color: #ddd;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 480px) {
+    .button > button:first-child, 
+    .button span > button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
+/* Login.module.css or whichever module you're using */
+
+.errormessage {
+    color: #FF0000;           /* Red color for the error text */
+    font-size: 14px;          /* Set the font size */
+    margin-top: 10px;         /* Space above the error message */
+    border: 1px solid #FF0000;/* Optional: You can have a border to make it stand out */
+    padding: 5px;             /* Space inside the error box */
+    border-radius: 4px;       /* Rounded corners */
+    background-color: #FFEDED;/* Optional: Light red background to make the error stand out more */
+}
+

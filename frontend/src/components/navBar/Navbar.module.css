@@ -1,0 +1,65 @@
+/* Theme */
+.mainContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0; /* To ensure the navbar is fixed at the top */
+    background-color: #A9B2B8;
+    width: 100%;
+    height: 10%;
+    padding: 0 2%; /* Added some horizontal padding for breathing room */
+}
+
+.mainContainer h1 > a {
+    text-decoration: none;
+    color: white;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+/* Links and Buttons Styling */
+.mainContainer a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.mainContainer button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #666;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.mainContainer button:hover {
+    background-color: #444;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .mainContainer {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 2%;
+    }
+
+    .mainContainer h1 {
+        margin-bottom: 10px;
+    }
+
+    .mainContainer div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .mainContainer a, .mainContainer button {
+        margin: 5px 0; /* Adjusted margins for vertical layout */
+    }
+}

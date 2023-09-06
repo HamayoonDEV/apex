@@ -1,0 +1,34 @@
+/* App.module.css */
+
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* full viewport height */
+    font-family: Arial, sans-serif; /* optional, a general font choice */
+}
+
+/* Navbar styles: if any specific navbar styles are needed */
+/* For instance, you might want to set a height or change the display type on smaller screens */
+
+.navbar {
+    /* Example styles, adjust as needed */
+    height: 60px;
+    background-color: #2a2a2a;
+}
+
+/* Main Content Area */
+.content {
+    flex: 1; /* Takes up remaining space after the navbar */
+    overflow-y: auto; /* If content is too long, make it scrollable */
+    padding: 20px; /* Give some space around the content */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    /* Example: stack Navbar items on smaller screens */
+    .navbar {
+        flex-direction: column;
+    }
+    
+    /* You can add further adjustments for other components here */
+}

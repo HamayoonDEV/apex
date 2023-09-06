@@ -1,0 +1,21 @@
+.loader {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers children horizontally */
+    justify-content: center; /* Centers children vertically */
+    position: fixed; /* Makes the loader float above the content */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white to slightly show content beneath */
+    z-index: 1000; /* Ensures the loader is above most other content */
+  }
+  
+  .loader h1 {
+    margin-bottom: 20px; /* Adds some space between the text and the spinner */
+    color: #333; /* Dark grey text color */
+    font-size: 1.5em; /* Slightly larger text */
+    text-align: center; /* Centers the text */
+  }
+  

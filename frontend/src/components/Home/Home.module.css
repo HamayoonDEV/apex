@@ -1,0 +1,82 @@
+/* Styles for the main container */
+.main {
+    width: 100%;
+    padding: 20px;
+    background-color: #f4f4f4; /* Light grey background */
+    min-height: 100vh; /* Ensure it takes at least the full height of the viewport */
+    display: flex;
+    justify-content: center; /* Horizontally center the grid */
+    align-items: center; /* Vertically center the grid */
+  }
+  
+  /* Styles for the grid that contains the articles */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* This will create a responsive grid */
+    gap: 20px; /* Space between articles */
+    width: 100%;
+    max-width: 1200px; /* Max width for the grid */
+  }
+  
+  /* Styles for each individual card/article */
+  .card {
+    background-color: #ffffff; /* White background for each card */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Keeps content like images within the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* A light shadow for depth */
+    transition: transform 0.2s ease-in-out; /* Smooth transform transition */
+  }
+  
+  .card:hover {
+    transform: translateY(-10px); /* Lifts the card up a bit on hover */
+  }
+  
+  .card img {
+    width: 100%; /* Ensures image takes full width of the card */
+    height: 150px; /* Fixed height */
+    object-fit: cover; /* Ensures aspect ratio is maintained */
+  }
+  
+  .card h1 {
+    font-size: 18px; /* Font size for the title */
+    padding: 10px; /* Padding around the title */
+    color: #333; /* Dark grey color for the text */
+    margin: 0; /* Remove default margin */
+  }
+/* ... (previous CSS) ... */
+
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+    .main {
+      padding: 10px;
+    }
+  
+    .grid {
+      gap: 10px;
+    }
+  
+    .card img {
+      height: 100px;
+    }
+  
+    .card h1 {
+      font-size: 16px;
+      padding: 8px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .card {
+      border-radius: 4px; /* Reduce corner rounding for very small screens */
+    }
+  
+    .card img {
+      height: 80px; /* Smaller image height for smaller screens */
+    }
+  
+    .card h1 {
+      font-size: 14px; /* Smaller font for very small screens */
+      padding: 5px;
+    }
+  }
+    

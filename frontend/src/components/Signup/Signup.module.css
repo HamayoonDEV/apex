@@ -1,0 +1,70 @@
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 4rem;
+    background-color: #D3D3D3;
+    width: 20rem;
+    margin-left: 35rem;
+    padding: 2rem;
+    border-radius: 15px;
+    
+}
+
+.heading h1{
+    color: gray;
+    margin-bottom: 2rem;
+}
+
+.text > *{
+    margin-bottom: 1rem;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* styles.module.css */
+
+.button {
+    display: flex;
+    flex-direction: column; /* Stacks the button and the span vertically */
+    align-items: center;    /* Centers content horizontally */
+    gap: 10px;              /* Space between the signup button and the span */
+    margin-top: 20px;       /* Spacing from whatever is above this div */
+}
+
+button {
+    padding: 12px 24px;     /* Top-bottom, Left-right padding */
+    font-size: 16px;        /* Text size */
+    cursor: pointer;        /* Makes the mouse cursor indicate a clickable area */
+    border: none;           /* Removes default border */
+    border-radius: 5px;     /* Slight rounding of corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* The primary signup button */
+.button > button {
+    background-color: #007BFF; /* Bright blue */
+    color: white;              /* White text */
+}
+
+.button > button:hover {
+    background-color: #0056b3; /* Slightly darker blue on hover */
+}
+
+/* The secondary login button inside the span */
+.button span button {
+    background-color: transparent; /* No background */
+    color: #007BFF;                /* Blue text to match the signup button */
+    padding: 5px 10px;             /* Slightly smaller padding */
+    border: 2px solid #007BFF;     /* Blue border */
+}
+
+.button span button:hover {
+    background-color: #007BFF; /* Bright blue background on hover */
+    color: white;              /* White text on hover */
+}
